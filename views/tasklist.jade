@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1.
+        Task List
+    ul
+        each task, i in tasklist
+            li
+                h3 #{i+1}. #{task.task}
+                
+    a(href="http://localhost:3000/newtask") Add new Task
